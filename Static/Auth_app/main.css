@@ -1,0 +1,13 @@
+body{
+    background-color: aqua;
+}
+
+h1{
+    height: 100px;
+    font-weight: bolder;
+}
+
+img{
+    height: 100px;
+    width: 50px;
+}
