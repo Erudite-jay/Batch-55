@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    "daphne",
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -42,12 +43,13 @@ INSTALLED_APPS = [
 
     'rest_framework',
 
-
     'Auth_app',
     'Forms_app',
     'Session_app',
     'JWT_app',
     'Signals_app',
+
+    'Channels_app',
 ]
 
 MIDDLEWARE = [
@@ -77,7 +79,9 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'Ecom.wsgi.application'
+# WSGI_APPLICATION = 'Ecom.wsgi.application'
+
+ASGI_APPLICATION= 'Ecom.asgi.application'
 
 
 # Database
